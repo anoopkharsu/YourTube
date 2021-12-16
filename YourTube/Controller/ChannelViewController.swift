@@ -39,7 +39,7 @@ class ChannelViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let des = segue.destination as? ChannelPageViewController {
             pageViewController = des
-            des.channel = channel
+            des.video = channel
             des.channelId = channelId
             des.mover = { index in
                 switch index {

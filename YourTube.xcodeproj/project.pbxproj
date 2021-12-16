@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7FD03F4CA9F9D898A796F37D /* Pods_YourTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59531F8568B93C3B9B559CAD /* Pods_YourTube.framework */; };
-		B82E281627625F56009A26F0 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E281527625F56009A26F0 /* VideoPlayerViewController.swift */; };
 		B82E281E2764C026009A26F0 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E281D2764C026009A26F0 /* ChannelViewController.swift */; };
 		B82E28212764C2E1009A26F0 /* ChannelUploadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E28202764C2E1009A26F0 /* ChannelUploadsViewController.swift */; };
 		B82E28232764C30B009A26F0 /* ChannelPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E28222764C30B009A26F0 /* ChannelPageViewController.swift */; };
+		B82E284D276B0C6B009A26F0 /* MoveElementsTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E284C276B0C6B009A26F0 /* MoveElementsTransition.swift */; };
+		B82E284F276B0DC9009A26F0 /* FromSearchToFullscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E284E276B0DC9009A26F0 /* FromSearchToFullscreen.swift */; };
+		B82E2851276B1944009A26F0 /* Replies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E2850276B1944009A26F0 /* Replies.swift */; };
 		B863B9622748A7BE001AAA44 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B863B9612748A7BE001AAA44 /* SearchViewController.swift */; };
 		B863B96427490A22001AAA44 /* SuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B863B96327490A22001AAA44 /* SuggestionTableViewCell.swift */; };
 		B863B966274A0EF5001AAA44 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B863B965274A0EF5001AAA44 /* SearchResultViewController.swift */; };
@@ -61,10 +63,12 @@
 /* Begin PBXFileReference section */
 		2BFE194E465FC24053CF5702 /* Pods-YourTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourTube.release.xcconfig"; path = "Target Support Files/Pods-YourTube/Pods-YourTube.release.xcconfig"; sourceTree = "<group>"; };
 		59531F8568B93C3B9B559CAD /* Pods_YourTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B82E281527625F56009A26F0 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		B82E281D2764C026009A26F0 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 		B82E28202764C2E1009A26F0 /* ChannelUploadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUploadsViewController.swift; sourceTree = "<group>"; };
 		B82E28222764C30B009A26F0 /* ChannelPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelPageViewController.swift; sourceTree = "<group>"; };
+		B82E284C276B0C6B009A26F0 /* MoveElementsTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveElementsTransition.swift; sourceTree = "<group>"; };
+		B82E284E276B0DC9009A26F0 /* FromSearchToFullscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromSearchToFullscreen.swift; sourceTree = "<group>"; };
+		B82E2850276B1944009A26F0 /* Replies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replies.swift; sourceTree = "<group>"; };
 		B863B9612748A7BE001AAA44 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		B863B96327490A22001AAA44 /* SuggestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewCell.swift; sourceTree = "<group>"; };
 		B863B965274A0EF5001AAA44 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
@@ -134,11 +138,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B82E284B276B0C1E009A26F0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B8A66AA7273D5CC100EEF9C3 /* NavigationControllerDelegate.swift */,
+				B82E284C276B0C6B009A26F0 /* MoveElementsTransition.swift */,
+				B82E284E276B0DC9009A26F0 /* FromSearchToFullscreen.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		B887FBA92744D25500C57063 /* VIew */ = {
 			isa = PBXGroup;
 			children = (
 				B887FBA72744D24E00C57063 /* VideoDescriptionView.swift */,
+				B8A66AA027399E6600EEF9C3 /* VideoTableViewCell.swift */,
 				B863B96C274F2DF8001AAA44 /* VideoTableViewCell.xib */,
+				B863B967274ABC5D001AAA44 /* ChannelTableViewCell.swift */,
 				B863B96F274F364A001AAA44 /* ChannelTableViewCell.xib */,
 				B863B9732751DBE0001AAA44 /* PlayListTableViewCell.swift */,
 				B863B9742751DBE0001AAA44 /* PlayListTableViewCell.xib */,
@@ -151,20 +167,17 @@
 		B8A66AA2273A3BD700EEF9C3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B8A66AA7273D5CC100EEF9C3 /* NavigationControllerDelegate.swift */,
+				B82E284B276B0C1E009A26F0 /* Navigation */,
 				B8D06AE42736C06600CE3BDE /* HomeViewController.swift */,
-				B8A66AA027399E6600EEF9C3 /* VideoTableViewCell.swift */,
 				B8A66AA9273E2B9500EEF9C3 /* VideoDetailViewController.swift */,
 				B887FBA52744CE1D00C57063 /* VideoDescriptionViewController.swift */,
 				B863B9612748A7BE001AAA44 /* SearchViewController.swift */,
 				B863B96327490A22001AAA44 /* SuggestionTableViewCell.swift */,
 				B863B965274A0EF5001AAA44 /* SearchResultViewController.swift */,
-				B863B967274ABC5D001AAA44 /* ChannelTableViewCell.swift */,
 				B863B971274F4AB4001AAA44 /* ChannelSectionViewController.swift */,
 				B86AA08A2759F2080098188D /* CommentViewController.swift */,
 				B864A379275D1E9400929F2A /* CommentContainerViewController.swift */,
 				B864A37B275D248D00929F2A /* CommentRepliesViewController.swift */,
-				B82E281527625F56009A26F0 /* VideoPlayerViewController.swift */,
 				B82E281D2764C026009A26F0 /* ChannelViewController.swift */,
 				B82E28202764C2E1009A26F0 /* ChannelUploadsViewController.swift */,
 				B82E28222764C30B009A26F0 /* ChannelPageViewController.swift */,
@@ -180,6 +193,7 @@
 				B863B969274BB57D001AAA44 /* SearchResults.swift */,
 				B863B9772754A425001AAA44 /* ChannelSection.swift */,
 				B864A371275B9C0E00929F2A /* Comments.swift */,
+				B82E2850276B1944009A26F0 /* Replies.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -350,6 +364,7 @@
 			files = (
 				B86AA08B2759F2080098188D /* CommentViewController.swift in Sources */,
 				B8D06AE52736C06600CE3BDE /* HomeViewController.swift in Sources */,
+				B82E2851276B1944009A26F0 /* Replies.swift in Sources */,
 				B8D06AE12736C06600CE3BDE /* AppDelegate.swift in Sources */,
 				B82E28212764C2E1009A26F0 /* ChannelUploadsViewController.swift in Sources */,
 				B863B9782754A425001AAA44 /* ChannelSection.swift in Sources */,
@@ -357,6 +372,7 @@
 				B8A66AAA273E2B9500EEF9C3 /* VideoDetailViewController.swift in Sources */,
 				B8D06AE32736C06600CE3BDE /* SceneDelegate.swift in Sources */,
 				B887FBA82744D24E00C57063 /* VideoDescriptionView.swift in Sources */,
+				B82E284F276B0DC9009A26F0 /* FromSearchToFullscreen.swift in Sources */,
 				B863B96A274BB57D001AAA44 /* SearchResults.swift in Sources */,
 				B82E28232764C30B009A26F0 /* ChannelPageViewController.swift in Sources */,
 				B863B9622748A7BE001AAA44 /* SearchViewController.swift in Sources */,
@@ -370,9 +386,9 @@
 				B887FBA62744CE1D00C57063 /* VideoDescriptionViewController.swift in Sources */,
 				B82E281E2764C026009A26F0 /* ChannelViewController.swift in Sources */,
 				B864A372275B9C0E00929F2A /* Comments.swift in Sources */,
+				B82E284D276B0C6B009A26F0 /* MoveElementsTransition.swift in Sources */,
 				B863B96427490A22001AAA44 /* SuggestionTableViewCell.swift in Sources */,
 				B863B972274F4AB4001AAA44 /* ChannelSectionViewController.swift in Sources */,
-				B82E281627625F56009A26F0 /* VideoPlayerViewController.swift in Sources */,
 				B863B968274ABC5D001AAA44 /* ChannelTableViewCell.swift in Sources */,
 				B864A37C275D248D00929F2A /* CommentRepliesViewController.swift in Sources */,
 			);

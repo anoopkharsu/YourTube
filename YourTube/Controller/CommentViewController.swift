@@ -36,13 +36,12 @@ class CommentViewController: UIViewController {
         navItems.titleView = label
     }
     
-    var getting = false
+    var fetchComments = false
     func getNext(){
-        if getting {
+        if fetchComments {
             return
         }
-        getting = true
-        print("getting")
+        fetchComments = true
         DispatchQueue.global().async {
             self.comments?.fetchCommentResource(pageToken: self.nextToken) { comments in
                 DispatchQueue.main.async {
@@ -51,7 +50,7 @@ class CommentViewController: UIViewController {
                         self.comments?.comments.append(Comment(commentThread: comment, comment: comment.snippet?.topLevelComment))
                     })
                     self.commentTableView.reloadData()
-                    self.getting = false
+                    self.fetchComments = false
                 }
             }
         }

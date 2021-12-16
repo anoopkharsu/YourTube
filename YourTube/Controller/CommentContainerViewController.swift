@@ -44,9 +44,5 @@ class CommentContainerViewController: UIViewController {
                 
             }
         }
-//            as? CommentViewController {
-//            des.videoData = videoData
-//            des.comments = comments
-//        }
     }
 }

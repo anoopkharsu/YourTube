@@ -9,12 +9,12 @@ import UIKit
 import GoogleAPIClientForREST
 
 class ChannelUploadsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var channel: VideoWithData? = nil
+    var video: VideoWithData? = nil
     var uploadsPlayListId = ""
     var uploads = Uploads()
     @IBOutlet weak var tableView: UITableView!
     var uploadId: String? {
-        if let id = channel?.channel?.contentDetails?.relatedPlaylists?.uploads {
+        if let id = video?.channel?.contentDetails?.relatedPlaylists?.uploads {
             return id
         }
         return nil
@@ -192,8 +192,8 @@ extension ChannelUploadsViewController {
                 videoController.videoData = VideoWithData(
                     item: video,
                     thumbnailData: data,
-                    channel: channel?.channel,
-                    channelImageData: channel?.channelImageData)
+                    channel: self.video?.channel,
+                    channelImageData: self.video?.channelImageData)
                 videoController.prive = "channel"
                 navigationController?.pushViewController(videoController, animated: true)
             }

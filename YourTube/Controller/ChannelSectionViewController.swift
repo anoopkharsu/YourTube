@@ -337,8 +337,6 @@ extension ChannelSectionViewController {
         detailLabel.sizeToFit()
         detailLabel.text = channelSection.items[section].sectionDetail
         
-//        detailLabel.frame = CGRect(origin: .zero, size: CGSize(width: view.frame.width - 32, height: 40))
-//        titleLabel.frame = CGRect(origin: .zero, size: CGSize(width: view.frame.width - 32, height: 20))
         titleLabel.clipsToBounds = true
         detailLabel.clipsToBounds = true
         let ddd = UILabel()

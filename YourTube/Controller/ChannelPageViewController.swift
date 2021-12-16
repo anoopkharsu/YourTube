@@ -7,34 +7,8 @@
 
 import UIKit
 
-extension ChannelPageViewController: TransitionInfoProtocol {
-   
-    func animationHeper() {
-        if let con = pageViewControllers[currentIndex] as? TransitionInfoProtocol {
-            con.animationHeper?()
-        }
-    }
-    
-    func viewsToAnimate() -> [UIView] {
-        if let con = pageViewControllers[currentIndex] as? TransitionInfoProtocol {
-            return con.viewsToAnimate()
-        }
-        return []
-    }
-    
-    func copyForView(_ subView: UIView, index: Int) -> UIView {
-        if let con = pageViewControllers[currentIndex] as? TransitionInfoProtocol {
-            return con.copyForView(subView, index: index)
-        }
-        return UIView()
-    }
-    
-    
-}
-
-
 class ChannelPageViewController: UIPageViewController, UIScrollViewDelegate {
-    var channel: VideoWithData? = nil
+    var video: VideoWithData? = nil
     var channelId = ""
     var pageViewControllers = [UIViewController]()
     var mover: ((Int) -> Void)? = nil
@@ -47,8 +21,8 @@ class ChannelPageViewController: UIPageViewController, UIScrollViewDelegate {
         if let c1 = storyboard?.instantiateViewController(identifier: "ChannelSectionViewController") as? ChannelSectionViewController,
               let c2 = storyboard?.instantiateViewController(identifier: "ChannelUploadsViewController") as? ChannelUploadsViewController  {
             c1.channelId = channelId
-            c1.channel = channel
-            c2.channel = channel
+            c1.channel = video
+            c2.video = video
             pageViewControllers += [c1, c2]
             c1.view.tag = 0
             c2.view.tag = 1
@@ -70,13 +44,34 @@ class ChannelPageViewController: UIPageViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
         let value = Int((scrollView.contentOffset.x / width) * 1000) - 1000
         if value < 0 && currentIndex == 1 {
             mover?(1000 + value)
         } else if value > 0 && currentIndex == 0{
             mover?(value)
         }
+    }
+}
+
+extension ChannelPageViewController: TransitionInfoProtocol {
+    func animationHeper() {
+        if let con = pageViewControllers[currentIndex] as? TransitionInfoProtocol {
+            con.animationHeper?()
+        }
+    }
+    
+    func viewsToAnimate() -> [UIView] {
+        if let con = pageViewControllers[currentIndex] as? TransitionInfoProtocol {
+            return con.viewsToAnimate()
+        }
+        return []
+    }
+    
+    func copyForView(_ subView: UIView, index: Int) -> UIView {
+        if let con = pageViewControllers[currentIndex] as? TransitionInfoProtocol {
+            return con.copyForView(subView, index: index)
+        }
+        return UIView()
     }
 }
 
@@ -96,7 +91,4 @@ extension ChannelPageViewController:  UIPageViewControllerDelegate, UIPageViewCo
         }
         return nil
     }
-    
-    
-  
 }
