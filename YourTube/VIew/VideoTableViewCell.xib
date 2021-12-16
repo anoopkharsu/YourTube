@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="VideoPresenter" rowHeight="336" id="Tll-La-CSW" customClass="VideoTableViewCell" customModule="YourTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="336"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tll-La-CSW" id="Dfb-yq-mPg">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="336"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIu-fX-7cB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="KIu-fX-7cB" secondAttribute="height" multiplier="16:9" id="qKp-ku-ELI"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yO4-hw-fUP">
+                        <rect key="frame" x="16" y="241" width="382" height="79"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="efz-JZ-ZND">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mh3-4z-Fbk"/>
+                                    <constraint firstAttribute="width" constant="40" id="vrk-S0-iYB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bzt-Ud-jef">
+                                <rect key="frame" x="56" y="0.0" width="326" height="79"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGi-wF-hbi">
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="60.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="38z-5Z-i4O">
+                                        <rect key="frame" x="0.0" y="64.5" width="326" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="SHOWTIME Sports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nT-fb-vOZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="18M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHF-ES-yss">
+                                                <rect key="frame" x="114.5" y="0.0" width="24" height="14.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="2 days ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8B-rK-vzb">
+                                                <rect key="frame" x="146.5" y="0.0" width="179.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bzt-Ud-jef" firstAttribute="leading" secondItem="efz-JZ-ZND" secondAttribute="trailing" constant="16" id="EQs-4c-75b"/>
+                            <constraint firstAttribute="bottom" secondItem="bzt-Ud-jef" secondAttribute="bottom" id="XgU-4I-W56"/>
+                            <constraint firstItem="bzt-Ud-jef" firstAttribute="top" secondItem="yO4-hw-fUP" secondAttribute="top" id="Z0j-JM-PI4"/>
+                            <constraint firstItem="efz-JZ-ZND" firstAttribute="leading" secondItem="yO4-hw-fUP" secondAttribute="leading" id="e3N-na-HqW"/>
+                            <constraint firstItem="efz-JZ-ZND" firstAttribute="top" secondItem="yO4-hw-fUP" secondAttribute="top" id="gjN-Cm-sa6"/>
+                            <constraint firstAttribute="trailing" secondItem="bzt-Ud-jef" secondAttribute="trailing" id="z21-pV-3kV"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUo-b6-UGU" customClass="EdgeInsetLabel" customModule="YourTube" customModuleProvider="target">
+                        <rect key="frame" x="363" y="206.5" width="31" height="14.5"/>
+                        <color key="backgroundColor" name="TimeLabelBackground"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" name="TimeTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="TUo-b6-UGU" secondAttribute="trailing" id="0bz-vj-zNN"/>
+                    <constraint firstAttribute="trailing" secondItem="yO4-hw-fUP" secondAttribute="trailing" constant="16" id="2V4-Bc-wm8"/>
+                    <constraint firstItem="yO4-hw-fUP" firstAttribute="top" secondItem="KIu-fX-7cB" secondAttribute="bottom" constant="8" id="Cwq-vn-cLy"/>
+                    <constraint firstItem="KIu-fX-7cB" firstAttribute="leading" secondItem="Dfb-yq-mPg" secondAttribute="leading" id="IbD-P3-QRs"/>
+                    <constraint firstItem="KIu-fX-7cB" firstAttribute="top" secondItem="Dfb-yq-mPg" secondAttribute="top" id="Qy8-fq-sci"/>
+                    <constraint firstItem="yO4-hw-fUP" firstAttribute="top" secondItem="TUo-b6-UGU" secondAttribute="bottom" constant="20" id="UeD-7h-4N9"/>
+                    <constraint firstItem="yO4-hw-fUP" firstAttribute="leading" secondItem="Dfb-yq-mPg" secondAttribute="leading" constant="16" id="Vbp-r3-ykc"/>
+                    <constraint firstAttribute="trailing" secondItem="KIu-fX-7cB" secondAttribute="trailing" id="bOy-JF-sVM"/>
+                    <constraint firstAttribute="bottom" secondItem="yO4-hw-fUP" secondAttribute="bottom" constant="16" id="tch-Wf-ipY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="channelImage" destination="efz-JZ-ZND" id="id9-Bx-Noa"/>
+                <outlet property="channelName" destination="6nT-fb-vOZ" id="Sb5-QB-X3o"/>
+                <outlet property="durationTimeLabelView" destination="TUo-b6-UGU" id="e7U-dC-ExS"/>
+                <outlet property="publishedTime" destination="W8B-rK-vzb" id="L3e-U1-oZC"/>
+                <outlet property="thumbnailImage" destination="KIu-fX-7cB" id="Drl-oh-5Wo"/>
+                <outlet property="titleLabel" destination="RGi-wF-hbi" id="1Vg-Y9-NaI"/>
+                <outlet property="viewCounts" destination="BHF-ES-yss" id="wh9-Io-OyI"/>
+            </connections>
+            <point key="canvasLocation" x="-142" y="-68"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="TimeLabelBackground">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.78299999237060547" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TimeTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

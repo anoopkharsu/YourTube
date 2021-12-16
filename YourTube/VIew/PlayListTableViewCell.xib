@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlayListCell" rowHeight="428" id="KGk-i7-Jjw" customClass="PlayListTableViewCell" customModule="YourTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="722" height="428"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="722" height="428"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeU-Cp-6AW">
+                        <rect key="frame" x="0.0" y="0.0" width="722" height="162.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="6kj-pf-vw0">
+                                <rect key="frame" x="8" y="8" width="260.5" height="146.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="9R1-Ll-U8o"/>
+                                    <constraint firstAttribute="width" secondItem="6kj-pf-vw0" secondAttribute="height" multiplier="16:9" id="YB0-96-cTl"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bfr-GJ-ODW">
+                                <rect key="frame" x="268.5" y="8" width="445.5" height="146.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcd-7U-5ql">
+                                        <rect key="frame" x="8" y="8" width="429.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Labelhjgj" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ9-p5-ipE">
+                                        <rect key="frame" x="8" y="58" width="429.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6Mh-n1-jBp">
+                                        <rect key="frame" x="8" y="58" width="429.5" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TER-zY-Xf4">
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="14.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpJ-se-6Ey">
+                                                <rect key="frame" x="39" y="0.0" width="390.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="248" horizontalCompressionResistancePriority="250" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC6-9n-Lpn">
+                                        <rect key="frame" x="8" y="72.5" width="429.5" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </stackView>
+                        </subviews>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1h1-7M-tNl" customClass="EdgeInsetLabel" customModule="YourTube" customModuleProvider="target">
+                        <rect key="frame" x="232.5" y="135" width="31" height="14.5"/>
+                        <color key="backgroundColor" name="TimeLabelBackground"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" name="TimeTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qeU-Cp-6AW" secondAttribute="trailing" id="2sT-vx-KOe"/>
+                    <constraint firstItem="qeU-Cp-6AW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3Zn-Bn-ANt"/>
+                    <constraint firstItem="1h1-7M-tNl" firstAttribute="bottom" secondItem="6kj-pf-vw0" secondAttribute="bottom" constant="-5" id="U83-oZ-c12"/>
+                    <constraint firstAttribute="bottom" secondItem="qeU-Cp-6AW" secondAttribute="bottom" id="jNl-wz-JDy"/>
+                    <constraint firstItem="qeU-Cp-6AW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="scq-jT-iAr"/>
+                    <constraint firstItem="1h1-7M-tNl" firstAttribute="trailing" secondItem="6kj-pf-vw0" secondAttribute="trailing" constant="-5" id="zEu-pH-cQm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="durationTimeLabelView" destination="1h1-7M-tNl" id="3hh-Xp-XkR"/>
+                <outlet property="publishTimeLabelView" destination="dpJ-se-6Ey" id="zBV-9d-foX"/>
+                <outlet property="videoThumbnailImageView" destination="6kj-pf-vw0" id="T2Z-8f-dXk"/>
+                <outlet property="videoTitleLabelView" destination="gQ9-p5-ipE" id="7dN-PR-3fI"/>
+                <outlet property="viewCountLabelView" destination="TER-zY-Xf4" id="VXF-G4-FTB"/>
+            </connections>
+            <point key="canvasLocation" x="428.98550724637687" y="231.02678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="TimeLabelBackground">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.78299999237060547" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TimeTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
