@@ -12,8 +12,8 @@ Download(15MB) and open .xcworkspace.(check signing & capabillities)
 
 # Features
 Rich Networking and functionality.<br/>
-Watch youtube videos, likes, comments(replies), descriptions.
-See channel home page and all videos.
-Trending YouTube videos according to your region.
-Search channels and videos. (Search suggestion)
-Beautiful custom navigation transitions.
+Watch youtube videos, likes, comments(replies), descriptions.<br/>
+See channel home page and all videos.<br/>
+Trending YouTube videos according to your region.<br/>
+Search channels and videos. (Search suggestion)<br/>
+Beautiful custom navigation transitions.<br/>
